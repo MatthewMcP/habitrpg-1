@@ -1,4 +1,4 @@
-script(type='text/ng-template', id='partials/options.social.challenges.detail.close.html')
+﻿script(type='text/ng-template', id='partials/options.social.challenges.detail.close.html')
   a.btn.btn-sm.btn-danger(ng-click="delete(closingChal)")=env.t('delete')
   h5= '- ' + env.t('or') + ' -'
   select(ui-select2, ng-required=true, ng-model='closingChal.winner', data-placeholder=env.t('selectWinner'), ng-change='selectWinner(closingChal)', style='display:block')
@@ -65,8 +65,13 @@ script(type='text/ng-template', id='partials/options.social.challenges.detail.ht
           div(ui-view)
 
 script(type='text/ng-template', id='partials/options.social.challenges.html')
+<<<<<<< HEAD
   .options-blurbmenu
     small.muted=env.t('blurbChallenges')
+=======
+ ul.options-blurbmenu    
+   li=env.t('blurbChallenges')
+>>>>>>> e51db83148b0bf382a8cd13cda448faa3208d52b
 
   .container-fluid
     .row
